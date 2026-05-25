@@ -25,14 +25,29 @@
 /* 2. LAYOUT GLOBAL */
 body {
   font-family:    'Montserrat', sans-serif;
-  background:     radial-gradient(rgba(246, 238, 217, 0.8));
   color:          var(--cor-texto);
   line-height:    1.6;
+  background: radial-gradient(circle at top, rgba(232, 213, 196, 0.80), transparent 35%),
+  radial-gradient(circle at bottom right, rgba(201, 149, 108, 0.16), transparent 30%),
+  linear-gradient(180deg, #fffcf9 0%, #fdf8f4 100%);
+}
 
-  /* Footer grudado no rodapé */
-  display:        flex;
-  flex-direction: column;
-  min-height:     100vh;
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 main {
@@ -45,26 +60,54 @@ main {
 
 /* 3. HEADER FLEXBOX */
 header {
-  background:      var(--cor-primaria);
-  color:           white;
-  padding:         0 24px;
-  height:          60px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(253, 248, 244, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--borda);
 
   /* Flexbox: logo esq, nav dir */
   display:         flex;
   justify-content: space-between;
-  align-items:     center;
 }
 
 .logo {
-  display: d=flex;
-  font-size:   0.7rem;
+  display: flex;
   font-weight: 700;
-  color:     var(--cor-fundo);
+  color:     var(--cor-primaria);
   gap: 12px;
+  align-items: center;
 }
 
-nav { display: flex; gap: 4px; align-items: center;}
+.logo-letra {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--cor-destaque), var(--cor-primaria));
+  color: var(--cor-branco);
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: var(--sombra);
+  flex-shrink: 0;
+}
+
+.logo-nome {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+nav { 
+  display: flex; 
+  gap: 4px; 
+  align-items: center;
+  justify-content: space-between
+  padding: 16px 0;
+  position: relative;
+}
 
 nav a {
   color: var(--cor-texto);
