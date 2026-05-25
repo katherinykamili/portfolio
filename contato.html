@@ -5,72 +5,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Títulos de seções  -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-    <!-- Todo o portifólio -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Portifólio - Katheriny Kamili</title>
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="container"></div>
-        <nav>
+  <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
 
-            <a class="logo" href="#inicio">
-                <span class="logo-letra">K</span>
-                <span class="logo-nome">Katheriny Kamili</span>
-            </a>
+  <!-- ========== CABEÇALHO ========== -->
+  <header>
+    <div class="container">
+      <nav>
 
-            <a href="index.html">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <br>
+        <a class="logo" href="index.html">
+          <span class="logo-letra">K</span>
+          <span class="logo-nome">Katheriny Kamili</span>
+        </a>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-  
-        <section class="contato">
-            <h2>Entre em Contato</h2>
+          <a href="index.html">Início</a>
+          <a href="sobremim.html">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="contato.html" class="link-ativo">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-            <form action="obrigada.html" method="get">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required minlength="3">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Seu email" required>
-                </div>
-                <div>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 1234-5678" required minlength="3">
-                </div>
-                <div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required minlength="3"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <br>
+  <!-- ========== CONTEÚDO PRINCIPAL ========== -->
+  <main id="conteudo">
 
-    <!-- RODAPÉ -->
-    <footer>
-        <p>&copy; 2026 Katheriny Kamili - Desenvolvedora Web Front-end</p>
-    </footer>
+    <!-- HERO DA PÁGINA DE CONTATO -->
+    <section class="hero-contato">
+      <div class="container">
+        <div class="hero-contato-texto">
+          <span class="etiqueta">Contato</span>
+          <h1>Vamos construir algo especial?</h1>
+          <p class="descricao-principal">
+            Para oportunidades, networking ou conexões profissionais,
+            entre em contato — será um prazer conversar com você.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS RÁPIDOS DE CONTATO -->
+    <section class="fundo-suave">
+      <div class="container">
+        <div class="caixa-contato">
+
+          <div class="grade-tres-colunas">
+            <div class="cartao-link-contato">
+              <span class="icone-contato">💼</span>
+              <h3>LinkedIn</h3>
+              <p>Conexões profissionais e oportunidades de carreira.</p>
+              <a
+                href="https://www.linkedin.com/in/katheriny-kamili-corr%C3%AAa-rocha-4a4639176/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao botao-principal"
+              >Acessar LinkedIn</a>
+            </div>
+
+            <div class="cartao-link-contato">
+              <span class="icone-contato">💻</span>
+              <h3>GitHub</h3>
+              <p>Repositórios, projetos e evolução técnica em código.</p>
+              <a
+                href="https://github.com/katherinykamili"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao botao-principal"
+              >Acessar GitHub</a>
+            </div>
+
+            <div class="cartao-link-contato">
+              <span class="icone-contato">✉️</span>
+              <h3>E-mail</h3>
+              <p>Prefere escrever diretamente? Manda uma mensagem!</p>
+              <a
+                href="mailto:seuemail@exemplo.com"
+                class="botao botao-principal"
+              >Enviar E-mail</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="formulario">
+      <div class="container">
+        <div class="titulo-secao">
+          <span class="etiqueta">Formulário</span>
+          <h2>Envie uma mensagem</h2>
+          <p>Preencha os campos abaixo e entrarei em contato o mais breve possível.</p>
+        </div>
+
+        <form class="formulario-contato" action="obrigada.html" method="get" novalidate>
+
+          <div class="grade-formulario">
+
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+                minlength="3"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="telefone">Telefone <span class="campo-opcional">(opcional)</span></label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(47) 99999-9999"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                placeholder="Ex: Oportunidade de emprego, parceria..."
+                required
+                minlength="3"
+              />
+            </div>
+
+          </div>
+
+          <div class="campo campo-mensagem">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="6"
+              placeholder="Escreva sua mensagem aqui..."
+              required
+              minlength="10"
+            ></textarea>
+          </div>
+
+          <div class="formulario-rodape">
+            <button type="submit" class="botao botao-principal botao-enviar">
+              Enviar mensagem
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Katheriny Kamili — Desenvolvedora Web Front-End</p>
+    </div>
+  </footer>
 
 </body>
-
 </html>

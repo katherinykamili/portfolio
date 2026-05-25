@@ -5,39 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Títulos de seções  -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-    <!-- Todo o portifólio -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Portifólio - Katheriny Kamili</title>
 </head>
 
 <body>
 
-    <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="container"></div>
-        <nav>
+  <!-- ========== CABEÇALHO ========== -->
+  <header>
+    <div class="container">
+      <nav>
 
-            <a class="logo" href="#inicio">
-                <span class="logo-letra">K</span>
-                <span class="logo-nome">Katheriny Kamili</span>
-            </a>
+        <a class="logo" href="index.html">
+          <span class="logo-letra">K</span>
+          <span class="logo-nome">Katheriny Kamili</span>
+        </a>
 
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <br>
+          <a href="index.html">Início</a>
+          <a href="sobremim.html">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="contato.html" class="link-ativo">Contato</a>
+      </nav>
+    </div>
+  </header>
+
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main id="conteudo">
@@ -45,9 +41,7 @@
         <!-- SEÇÃO DE DESTAQUE -->
         <section class="secao-destaque" id="inicio">
             <div class="container">
-                <div class="destaque-grade">
 
-                    <!-- Coluna esquerda -->
                     <div class="destaque-texto">
                         <span class="etiqueta">Portifólio profissional</span>
                         <h1>Desenvolvedora Front-End</h1>
@@ -113,36 +107,6 @@
             </div>
         </section>
 
-        <!-- SOBRE MIM -->
-        <section class="secao" id="sobre">
-            <div class="container">
-                <div class="titulo-secao">
-                    <span class="etiqueta">Sobre mim</span>
-                    <h2>Uma jornada construída com dedicação e vontade de aprender</h2>
-                </div>
-
-                <div class="grade-tres-colunas">
-                    <article class="cartao-info">
-                        <h3>Perfil</h3>
-                        <p>Sou estudante de tecnologia e sigo desenvolvendo minhas habilidades em desenvolvimento web,
-                            com atenção especial à criação de interfaces responsivas, organizadas e agradáveis de
-                            navegar.</p>
-                    </article>
-
-                    <article class="cartao-info">
-                        <h3>Objetivo</h3>
-                        <p>Conquistar oportunidades na área de tecnologia, continuar aprendendo e contribuir com novos
-                            projetos.</p>
-                    </article>
-
-                    <article class="cartao-info">
-                        <h3>Diferencial</h3>
-                        <p>Comunicação eficaz, organização, proatividade e dedicação.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <!-- HABILIDADES -->
         <section class="fundo-suave" id="habilidades">
             <div class="container">
@@ -161,73 +125,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- PROJETOS -->
-        <section id="projetos">
-            <div class="container">
-                <div class="titulo-secao">
-                    <span class="etiqueta">Projetos</span>
-                    <h2>Projetos que representam minha evolução</h2>
-                    <p>Estes projetos mostram minha caminhada no front-end, com o aperfeiçoamento contínuo.</p>
-                </div>
-
-                <div class="grade-tres-colunas">
-                    <article class="cartao-projeto">
-                        <span class="etiqueta-projeto">HTML + CSS</span>
-                        <h3>Coffee House</h3>
-                        <p>Projeto fictício de cafeteria gourmet com proposta visual charmosa, navegação em múltiplas
-                            páginas e foco em apresentação visual.</p>
-                        <div class="links-projeto">
-                            <a href="https://github.com/katherinykamili/coffee-house" target="_blank"
-                                rel="noopener noreferrer">Ver repositório</a>
-                        </div>
-                    </article>
-
-                    <article class="cartao-projeto">
-                        <span class="etiqueta-projeto">Estudos Front-End</span>
-                        <h3>Katheriny HTML CSS</h3>
-                        <p>Repositório voltado aos estudos de desenvolvimento front-end, com prática de estruturação,
-                            estilização e experimentação visual.</p>
-                        <div class="links-projeto">
-                            <a href="https://github.com/katherinykamili/Katheriny-html-css" target="_blank"
-                                rel="noopener noreferrer">Ver repositório</a>
-                        </div>
-                    </article>
-
-                    <article class="cartao-projeto">
-                        <span class="etiqueta-projeto">JavaScript</span>
-                        <h3>Requisição HTTP na API</h3>
-                        <p>Exemplo prático de consumo de API REST com JavaScript puro, manipulando dados e exibindo
-                            conteúdo no front-end de forma dinâmica.</p>
-                        <div class="links-projeto">
-                            <a href="https://github.com/katherinykamili/requisicao-http-na-api" target="_blank"
-                                rel="noopener noreferrer">Ver repositório</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTATO -->
-        <section id="contato">
-            <div class="container">
-                <div class="caixa-contato">
-                    <span class="etiqueta">Contato</span>
-                    <h2>Vamos construir algo especial?</h2>
-                    <p>Para oportunidades, networking ou conexões profissionais, você pode me encontrar nas plataformas
-                        abaixo.</p>
-
-                    <div class="grupo-botoes grupo-botoes-centro">
-                        <a href="https://github.com/katherinykamili" target="_blank" rel="noopener noreferrer"
-                            class="botao botao-principal">GitHub</a>
-                        <a href="https://www.linkedin.com/in/katheriny-kamili-corr%C3%AAa-rocha-4a4639176/"
-                            target="_blank" rel="noopener noreferrer" class="botao botao-contorno">LinkedIn</a>
-                        <a href="mailto:seuemail@exemplo.com" class="botao botao-contorno">E-mail</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- RODAPÉ -->
