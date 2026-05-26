@@ -6,37 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portifólio - Katheriny Kamili</title>
 </head>
 
 <body>
 
-  <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
+    <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- ========== CABEÇALHO ========== -->
-  <header>
-    <div class="container">
-      <nav>
+    <!-- ========== CABEÇALHO ========== -->
+    <header>
+        <div class="container">
+            <nav>
 
-        <a class="logo" href="index.html">
-          <span class="logo-letra">K</span>
-          <span class="logo-nome">Katheriny Kamili</span>
-        </a>
+                <a class="logo" href="index.html">
+                    <span class="logo-letra">K</span>
+                    <span class="logo-nome">Katheriny Kamili</span>
+                </a>
 
-          <a href="index.html">Início</a>
-          <a href="sobremim.html">Sobre</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="projetos.html">Projetos</a>
-          <a href="contato.html" class="link-ativo">Contato</a>
-      </nav>
-    </div>
-  </header>
+                <a href="index.html">Início</a>
+                <a href="sobremim.html">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="contato.html" class="link-ativo">Contato</a>
+            </nav>
+        </div>
+    </header>
 
 
     <!-- CONTEÚDO PRINCIPAL -->
-     <main>
+    <main>
         <section id="projetos">
             <div class="container">
                 <div class="titulo-secao">
@@ -51,9 +52,27 @@
                         <h3>Coffee House</h3>
                         <p>Projeto fictício de cafeteria gourmet com proposta visual charmosa, navegação em múltiplas
                             páginas e foco em apresentação visual.</p>
+
+                        <div class="galeria-miniatura" style="display:flex; gap:8px; margin-top:12px;">
+
+                            <img src="img/coffee-house-home.jpg" alt="Homepage Coffee House" loading="lazy">
+                            <img src="img/coffee-house-menu.jpg" alt="Página do menu com grid de cafés" loading="lazy"
+                                style="width:32%; object-fit:cover; border-radius:4px;" />
+                            <img src="img/coffee-house-form.jpg" alt="Formulário trabalhe conosco" loading="lazy"
+                                style="width:32%; object-fit:cover; border-radius:4px;" />
+                            <img src="img/coffee-house-maps.jpg" alt="Página saiba mais com horários e mapa"
+                                loading="lazy" style="width:32%; object-fit:cover; border-radius:4px;" />
+                        </div>
+
+                        <figcaption style="font-size:0.8rem; color:var(--cinza-medio); margin-top:8px;">
+                            Menu de produtos, formulário de contratação e integração com Google Maps
+                        </figcaption>
+
                         <div class="links-projeto">
                             <a href="https://github.com/katherinykamili/coffee-house" target="_blank"
                                 rel="noopener noreferrer">Ver repositório</a>
+                            <a href="https://katherinykamili.github.io/coffee-house/" target="_blank"
+                                rel="noopener noreferrer">Ver site publicado →</a>
                         </div>
                     </article>
 
@@ -81,4 +100,4 @@
                 </div>
             </div>
         </section>
-     </main>
+    </main>
