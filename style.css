@@ -37,6 +37,11 @@ body {
     radial-gradient(circle at top left, rgba(232, 213, 196, 0.80), transparent 35%),
     radial-gradient(circle at bottom right, rgba(201, 149, 108, 0.16), transparent 30%),
     linear-gradient(180deg, #fffcf9 0%, #fdf8f4 100%);
+
+  /* Footer grudado no rodapé */
+  display:        flex;
+  flex-direction: column;
+  min-height:     100vh;
 }
 
 img {
