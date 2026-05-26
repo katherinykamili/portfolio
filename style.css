@@ -491,20 +491,52 @@ section {
 /* 11. LINKS DO PROJETO */
 
 .links-projeto {
-  margin-top: auto;
+   margin-top: auto;
   padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .links-projeto a {
   color: var(--cor-secundaria);
   font-weight: 700;
-  transition: color 0.2s;
+  font-size: 0.9rem;
+  transition: color 0.2s, transform 0.2s;
 }
 
 .links-projeto a:hover {
   color: var(--cor-primaria);
   text-decoration: underline;
+  transform: translateX(2px);
 }
+
+.galeria-miniatura {
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
+
+  .lista-miniaturas {
+    gap: 10px;
+  }
+
+  .miniatura-item {
+    flex: 1 1 60px;
+    min-width: 60px;
+  }
+
+  .miniatura-img:hover {
+    transform: scale(1.04);
+  }
+
+  .links-projeto {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .links-projeto a:hover {
+    transform: translateX(0);
+  }
 
 /* 12. CAIXA DE CONTATO */
 
