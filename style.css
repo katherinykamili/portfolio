@@ -84,7 +84,7 @@ ul {
 
 /* 3. HEADER FLEXBOX */
 header {
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 999;
   background: rgba(253, 248, 244, 0.88);
@@ -146,6 +146,7 @@ nav  a {
 nav  a:hover {
   color: var(--cor-primaria);
   background: rgba(201, 149, 108, 0.12);
+  text-decoration: none;
 }
 
 .menu-icone {
@@ -496,11 +497,11 @@ section {
 /* 11. LINKS DO PROJETO */
 
 .links-projeto {
-   margin-top: auto;
+  margin-top: auto;
   padding-top: 16px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .links-projeto a {
@@ -513,35 +514,9 @@ section {
 .links-projeto a:hover {
   color: var(--cor-primaria);
   text-decoration: underline;
-  transform: translateX(2px);
+  transform: translateX(0px);
+  text-decoration: none;
 }
-
-.galeria-miniatura {
-    margin-top: 14px;
-    margin-bottom: 10px;
-  }
-
-  .lista-miniaturas {
-    gap: 10px;
-  }
-
-  .miniatura-item {
-    flex: 1 1 60px;
-    min-width: 60px;
-  }
-
-  .miniatura-img:hover {
-    transform: scale(1.04);
-  }
-
-  .links-projeto {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .links-projeto a:hover {
-    transform: translateX(0);
-  }
 
 /* 12. CAIXA DE CONTATO */
 
@@ -725,33 +700,6 @@ footer p {
   }
 }
 
-@media (max-width: 768px) {
-  section {
-    padding: 70px 0;
-  }
-
-  .cartao-perfil,
-  .cartao-info,
-  .cartao-projeto,
-  .cartao-trajetoria,
-  .caixa-contato {
-    padding: 24px 20px;
-  }
-
-  .circulo-foto {
-    width: 120px;
-    height: 120px;
-    font-size: 2.5rem;
-  }
-
-  .grupo-botoes {
-    flex-direction: column;
-  }
-
-  .botao {
-    width: 100%;
-  }
-
   /* Estilos do slider */
 
 .slider-container {
@@ -796,5 +744,4 @@ footer p {
 
 .mySlides:hover {
     transform: scale(1.05);
-}
 }
