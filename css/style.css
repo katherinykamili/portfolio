@@ -471,6 +471,7 @@ section {
 
 .icone-contato {
   font-size: 2rem;
+  display: flex;
 }
 
 /* 10. HABILIDADES */
@@ -674,10 +675,6 @@ footer {
     width: 100%;
     max-width: 520px;
     margin: 0 auto;
-  }
-
-  .menu-icone {
-    display: flex;
   }
 
   .lista-navegacao {
