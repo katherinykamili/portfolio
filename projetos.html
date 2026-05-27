@@ -119,60 +119,16 @@
                         <p>Repositório voltado aos estudos de desenvolvimento front-end, com prática de estruturação,
                             estilização e experimentação visual.</p>
 
-                        <div class="w3-content w3-display-container slider-container" style="max-width:800px">
-                            <img class="mySlides2" src="img/homepage-html-css.png" style="width: 100%;"
-                                alt="Homepage-HTML-CSS" href="projetos.html">
-                            <img class="mySlides2" src="img/body-html-css.png" style="width:100%" alt="Body-HTML-CSS"
-                                href="projetos.html">
+                        <div class='galeria' id='galeria'>
+                            <figure>
+                                <img src="img/homepage-html-css.png" alt="Homepage" loading='lazy'>
+                                <figcaption>Homepage</figcaption>
+                            </figure>
 
-                            <div class="w3-left w3-hover-text-khaki slider-btn-left" onclick="plusDivs(-1)">&#10094;
+                            <div class="links-projeto">
+                                <a href="https://github.com/katherinykamili/Katheriny-html-css" target="_blank"
+                                    rel="noopener noreferrer">Ver repositório</a>
                             </div>
-                            <div class="w3-right w3-hover-text-khaki slider-btn-right" onclick="plusDivs(1)">&#10095;
-                            </div>
-
-                            <div class="w3-center w3-container slider-dots" style="width:100%">
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
-                                    onclick="currentDiv(1)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
-                                    onclick="currentDiv(2)"></span>
-                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
-                                    onclick="currentDiv(3)"></span>
-                            </div>
-                        </div>
-
-                        <script>
-                            var slideIndex = 1;
-                            showDivs(slideIndex);
-
-                            function plusDivs(n) {
-                                showDivs(slideIndex += n);
-                            }
-
-                            function currentDiv(n) {
-                                showDivs(slideIndex = n);
-                            }
-
-                            function showDivs(n) {
-                                var i;
-                                var x = document.getElementsByClassName("mySlides2");
-                                var dots = document.getElementsByClassName("demo");
-                                if (n > x.length) { slideIndex = 1 }
-                                if (n < 1) { slideIndex = x.length }
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";
-                                }
-                                for (i = 0; i < dots.length; i++) {
-                                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                                }
-                                x[slideIndex - 1].style.display = "block";
-                                dots[slideIndex - 1].className += " w3-white";
-                            }
-                        </script>
-
-                        <div class="links-projeto">
-                            <a href="https://github.com/katherinykamili/Katheriny-html-css" target="_blank"
-                                rel="noopener noreferrer">Ver repositório</a>
-                        </div>
                     </article>
 
                     <article class="cartao-projeto">

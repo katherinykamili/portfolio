@@ -751,3 +751,26 @@ footer {
 .mySlides2:hover {
     transform: scale(1.05);
 }
+
+.galeria {
+  color: var(--cor-texto-suave);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.galeria figure {
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #e2e8f0;
+}
+.galeria figure img {
+  object-fit: cover; display: flex;
+  transition: transform .3s, opacity .3s;
+  flex-direction: column;
+}
+.galeria .card { flex:1 1 250px;}
+
+.galeria figure:hover img {
+  transform: scale(1.06); opacity: .82;
+}
