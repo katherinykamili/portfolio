@@ -408,10 +408,13 @@ section {
   font-weight: 700;
 }
 
-.foto-perfil {
+.foto-perfil img{
   display: flex;
   justify-content: center;
   margin: 10px 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .circulo-foto {
@@ -777,7 +780,7 @@ footer {
 }
 
 .mySlides {
-  border-radius: 12px;
+  border-radius: 15px;
   transition: transform .2s ease;
 }
 
@@ -786,7 +789,7 @@ footer {
 }
 
 .mySlides2 {
-  border-radius: 12px;
+  border-radius: 15px;
   transition: transform .2s ease;
 }
 
@@ -806,7 +809,7 @@ footer {
 
 .galeria figure {
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 15px;
   border: 1px solid #e2e8f0;
 }
 
