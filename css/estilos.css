@@ -725,6 +725,55 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .tabela-contato,
+  .tabela-contato thead,
+  .tabela-contato tbody,
+  .tabela-contato tr,
+  .tabela-contato td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabela-contato thead {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .tabela-contato tbody tr {
+    margin-bottom: 16px;
+    background: rgba(255, 252, 249, 0.9);
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--sombra);
+  }
+
+  .tabela-contato td {
+    padding: 8px 0;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tabela-contato td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-right: 16px;
+  }
+
+  .tabela-contato .col-acao {
+    text-align: left;
+    padding-top: 16px;
+  }
+
+  .tabela-contato .col-acao .botao {
+    width: 100%;
+  }
+}
+
 /* 18. Estilos do slider */
 
 .slider-container {
