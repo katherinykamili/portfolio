@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-  <title>Portfólio - Katheriny Kamili</title>
+    <title>Portfólio - Katheriny Kamili</title>
 </head>
+
 <body>
 
-  <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
+    <a class="link-pular" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- CABEÇALHO -->
-  <header>
-    <div class="container">
-      <nav>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container">
+            <nav>
 
-        <a class="logo" href="index.html">
-          <span class="logo-letra">K</span>
-          <span class="logo-nome">Katheriny Kamili</span>
-        </a>
+                <a class="logo" href="index.html">
+                    <span class="logo-letra">K</span>
+                    <span class="logo-nome">Katheriny Kamili</span>
+                </a>
 
-        <a href="index.html">Início</a>
-        <a href="sobremim.html">Sobre</a>
-        <a href="index.html#habilidades">Habilidades</a>
-        <a href="produtos.html">Projetos</a>
-        <a href="contato.html" class="link-ativo">Contato</a>
-      </nav>
-    </div>
-  </header>
+                <a href="index.html">Início</a>
+                <a href="sobremim.html">Sobre</a>
+                <a href="index.html#habilidades">Habilidades</a>
+                <a href="produtos.html">Projetos</a>
+                <a href="contato.html" class="link-ativo">Contato</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <main>
+    <main id="conteudo">
         <section class="secao" id="sobre">
             <div class="container">
                 <div class="titulo-secao">
                     <span class="etiqueta">Sobre mim</span>
                     <h2>Uma jornada construída com dedicação e vontade de aprender</h2>
                 </div>
+                <!-- GRADE DE 2 COLUNAS: IMAGEM À ESQUERDA, TEXTO À DIREITA -->
+                <div class="grade-duas-colunas">
 
-                <div class="grade-tres-colunas">
-                    <article class="cartao-info">
-                        <h3>Perfil</h3>
-                        <p>Sou estudante de tecnologia e sigo desenvolvendo minhas habilidades em desenvolvimento web,
-                            com atenção especial à criação de interfaces responsivas, organizadas e agradáveis de
-                            navegar.</p>
-                    </article>
+                    <!-- COLUNA DA ESQUERDA — IMAGEM -->
+                    <div class="coluna-imagem">
+                        <img src="img/sobre.jpg" alt="Foto de perfil de Katheriny Kamili, desenvolvedora front-end"
+                            loading="lazy">
+                    </div>
 
-                    <article class="cartao-info">
-                        <h3>Objetivo</h3>
-                        <p>Conquistar oportunidades na área de tecnologia, continuar aprendendo e contribuir com novos
-                            projetos.</p>
-                    </article>
-
-                    <article class="cartao-info">
-                        <h3>Diferencial</h3>
-                        <p>Comunicação eficaz, organização, proatividade e dedicação.</p>
-                    </article>
+                    <!-- COLUNA DA DIREITA — TEXTO -->
+                    <div class="coluna-texto">
+                        <article class="cartao-info">
+                            <h3>Perfil</h3>
+                            <p>Sou estudante de tecnologia e sigo desenvolvendo minhas habilidades em desenvolvimento
+                                web, com
+                                atenção especial à criação de interfaces responsivas, organizadas e agradáveis de
+                                navegar.</p>
+                        </article>
+                        <article class="cartao-info">
+                            <h3>Objetivo</h3>
+                            <p>Conquistar oportunidades na área de tecnologia, continuar aprendendo e contribuir com
+                                novos
+                                projetos.</p>
+                        </article>
+                        <article class="cartao-info">
+                            <h3>Diferencial</h3>
+                            <p>Comunicação eficaz, organização, proatividade e dedicação.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- RODAPÉ -->
