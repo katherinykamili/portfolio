@@ -514,7 +514,6 @@ section {
 
 .links-projeto a:hover {
   color: var(--cor-primaria);
-  text-decoration: underline;
   transform: translateX(0px);
   text-decoration: none;
 }
@@ -748,6 +747,8 @@ footer {
 .mySlides2:hover {
     transform: scale(1.05);
 }
+
+/* GALERIA ESTUDOS FRONT-END */
 
 .galeria {
   color: var(--cor-texto-suave);
