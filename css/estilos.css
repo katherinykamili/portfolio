@@ -1,4 +1,4 @@
-/* css/estilos.css — Aula 05: Flexbox + Variáveis */
+/* css/estilos.css — Aula 06: Projeto Final — Site Completo */
 
 /* 1. VARIÁVEIS GLOBAIS */
 :root {
@@ -84,11 +84,10 @@ ul {
 
 /* 3. HEADER FLEXBOX */
 header {
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 999;
   background: rgba(253, 248, 244, 0.88);
-  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--borda);
 }
 
@@ -262,7 +261,7 @@ section {
 /* 9. GRADES - FLEXBOX */
 
 .grade-tres-colunas {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
