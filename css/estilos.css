@@ -824,6 +824,7 @@ footer {
   overflow: hidden;
   border: 1px solid var(--borda);
 }
+
 .tabela-contato td, .tabela-contato th {
   padding: 16px 24px;
   vertical-align: middle;
@@ -837,4 +838,38 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.10em;
   border:none;
+}
+
+.tabela td {
+  color: var(--cor-texto);
+  border-bottom: 1px solid var(--borda);
+}
+
+.tabela-contato tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela-contato tbody tr:hover {
+  background: rgba(201, 149, 108, 0.08);
+}
+
+.tabela-contato .coluna-icones {
+  width: 15%;
+  color: var(--cor-secundaria);
+}
+
+.tabela-contato .coluna-descricao {
+  width: 70%;
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+}
+
+.tabela-contato .coluna-ação {
+  width: 30%;
+ text-align: center;
+}
+
+.tabela-contato .icone-contato {
+  color: var(--cor-secundaria);
+  margin-right: 8px;
 }
