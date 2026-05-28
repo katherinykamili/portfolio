@@ -149,23 +149,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-.menu-icone {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  padding: 8px;
-}
-
-.menu-icone span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--cor-primaria);
-  border-radius: 4px;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
 /* 4. SECTION */
 section {
   padding: 90px 0;
@@ -506,6 +489,7 @@ section {
 .icone-contato {
   font-size: 2rem;
   display: flex;
+  justify-content: center;
 }
 
 /* 12. HABILIDADES */
