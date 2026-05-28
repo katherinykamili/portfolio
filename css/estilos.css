@@ -331,6 +331,12 @@ section {
   max-width: 10ch;
 }
 
+.destaque-texto h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--cor-primaria);
+  line-height: 1.1;
+}
+
 .descricao-principal {
   color: var(--cor-texto-suave);
   line-height: 1.8;
